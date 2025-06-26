@@ -1,0 +1,129 @@
+/* Estilo base */
+body {
+  margin-left: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Corrige texto dos containers que devem continuar pretos */
+.dark-text-fix {
+  background-color: white !important;
+  color: black !important;
+}
+
+/* Acessibilidade: melhora foco e visibilidade */
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px dashed #555;
+  outline-offset: 2px;
+}
+
+/* Rodapé responsivo */
+.footer {
+  background-color: #a39d9d;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-col {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+/* FORMULÁRIO "ENTRE EM CONTACTO" */
+.contact-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-form-wrapper h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contact-form-wrapper form {
+  background-color: #222;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  width: 320px;
+}
+
+.contact-form-wrapper label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.contact-form-wrapper input[type="text"],
+.contact-form-wrapper input[type="email"],
+.contact-form-wrapper input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #111;
+  color: yellow;
+}
+
+.contact-form-wrapper button,
+.contact-form-wrapper input[type="submit"],
+.contact-form-wrapper input[type="reset"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form-wrapper button:hover,
+.contact-form-wrapper input[type="submit"]:hover,
+.contact-form-wrapper input[type="reset"]:hover {
+  background-color: #45a049;
+}
+
+.contact-form-wrapper #resultado {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ccc;
+  text-align: center;
+}
+
+

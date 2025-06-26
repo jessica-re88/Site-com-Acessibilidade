@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Project-Accessibility</title>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="projeto.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Botão de Dark Mode -->
+  <button id="toggle-dark-mode" aria-label="Ativar modo escuro" style="position: fixed; top: 10px; right: 10px; padding: 10px 15px; z-index: 999; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    🌙
+  </button>
+
+  <!-- Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#home">Artificial Intelligence</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#destaques">Os Nossos Destaques</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Fique por Dentro
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#educacao">IA na Educação</a>
+            <a class="dropdown-item" href="#musicas">Músicas feitas por IA</a>
+            <a class="dropdown-item" href="#comida">Comida feita por Robô</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav><!-- fim da navebar -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="imagens/baner1.jpg" alt="Primeiro Slide">
+
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="imagens/baner2.jpg" alt="Segundo Slide">
+
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="imagens/baner3.jpg" alt="Terceiro Slide">
+
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div> <br> <br>
+<!-- fim do carrocel -->
+<h2 id="destaques">Os Nossos Destaques</h2>
+  <div class="card-columns">
+    <div class="card">
+      <img class="card-img-top" src="imagens/25.jpg" alt="Pessoa usando realidade virtual com IA">
+      <div class="card-body">
+        <h5 class="card-title">Realidade Virtual e IA</h5>
+        <p class="card-text">Experiências imersivas com IA e VR.</p>
+      </div>
+    </div>
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>“A inteligência artificial não substituirá os humanos, mas os humanos que souberem usá-la substituirão os que não souberem.”</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          Rodapé (autor):<cite title="Título da fonte">Adaptado de citações modernas sobre IA</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="imagens/21.jpg" alt="Imagem de capa do card">
+    <div class="card-body">
+      <h5 class="card-title">IA estratégica: quando máquinas aprendem a pensar</h5>
+      <p class="card-text">Sistemas inteligentes agora são capazes de analisar milhares de possibilidades em jogos como o xadrez, superando até mesmo os maiores mestres humanos.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    </div>
+  </div>
+  <div class="card bg-primary text-white text-center p-3">
+    <blockquote class="blockquote mb-0">
+      <p>“A inovação começa onde a tecnologia encontra a criatividade. E a IA é a ponte entre elas.”</p>
+      <footer class="blockquote-footer">
+        <small>
+       Visão contemporânea sobre IA e inovação <cite title="Título da fonte">Título da fonte</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">IA generativa: criando com código</h5>
+      <p class="card-text">Ferramentas baseadas em IA são agora capazes de escrever textos, compor músicas, criar imagens e até programar. A criatividade humana encontra um novo aliado no código inteligente.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img" src="imagens/32.jpg" alt="Imagem do card">
+  </div>
+  <div class="card p-3 text-right">
+    <blockquote class="blockquote mb-0">
+      <p>“A inovação começa onde a tecnologia encontra a criatividade. E a IA é a ponte entre elas.”</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          Rodapé (autor):<cite title="Título da fonte">Visão contemporânea sobre IA e inovação</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">A mente digital: como a IA interpreta o mundo</h5>
+      <p class="card-text">Com algoritmos avançados, a inteligência artificial já consegue reconhecer rostos, emoções e padrões com precisão impressionante, revolucionando áreas como segurança e saúde.</p>
+      <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+    </div>
+  </div>
+</div>
+</div><br> <br>
+<!-- fim dos cards -->
+ <h2 id="fique-por-dentro">Fique por Dentro</h2>
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="educacao">
+        <h5 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+            IA na Educação
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non alemanha 0 x 2 coreia do sul cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+   <div class="card">
+      <div class="card-header" id="musicas">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">
+            Músicas feitas por IA
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Comida feita por Robô
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+        <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div><br> <br>
+<!-- fim do acordeon -->
+
+<form>
+    <section id="contacto" class="contact-form-wrapper">
+  <h2>Entre em contacto</h2>
+  <form>
+    <fieldset>
+      <legend>Informações pessoais</legend>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit">Enviar</button>
+    </fieldset>
+  </form>
+</section>
+
+
+<br><br>
+</form> <!-- Fim do formulário --> <br> <br>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>JC</h3>
+        <p>Explorando o que há de mais moderno em Inteligência Artificial e seu impacto no mundo.</p>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><a href="#about">Sobre Nós</a></li>
+          <li><a href="#applications">Aplicativos</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contate-nos</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Jéssica Cunha. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts Bootstrap e JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const darkModeToggle = document.getElementById('toggle-dark-mode');
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const containers = document.querySelectorAll('.card, .card-body, .footer, .accordion, .navbar');
+      containers.forEach(container => {
+        container.classList.toggle('dark-text-fix');
+      });
+    });
+  </script>
+</body>
+</html>
